@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valley Fresh Farming – Fresh From Our Fields to Your Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="#" class="nav-logo" onclick="showPage('home')">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-leaf h-7 w-7 text-primary"
+        >
+          <path
+            d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"
+          ></path>
+          <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+        </svg>
+        Valley Fresh Farming
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li>
+          <a href="#" onclick="showPage('home')" id="nav-home" class="active"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="#" onclick="showPage('about')" id="nav-about">About Us</a>
+        </li>
+        <li>
+          <a href="#" onclick="alert('Coming soon!')" id="nav-produce"
+            >Our Produce</a
+          >
+        </li>
+        <li>
+          <a href="#" onclick="alert('Coming soon!')" id="nav-contact"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a href="#" class="nav-cta" onclick="showPage('about')"
+            >Get In Touch</a
+          >
+        </li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- ============ HOME PAGE ============ -->
+<div class="page active" id="page-home">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-badge">Now in Season: Spinach &amp; Butternut</div>
+    <div class="hero-content">
+      <h1>Fresh From Our<br>Fields to Your Table</h1>
+      <p>Quality vegetables grown naturally on South African soil. Supplying local customers, restaurants, and retailers with farm-fresh produce.</p>
+      <div class="hero-btns">
+        <a href="#" class="btn-primary" onclick="alert('Coming soon!')">View Our Produce →</a>
+        <a href="#" class="btn-outline" onclick="alert('Coming soon!')">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+   <!-- Intro -->
+  <section class="intro-section">
+    <div class="intro-inner">
+      <div class="intro-text reveal">
+        <p class="section-label">Our Farm</p>
+        <h2 class="section-title">Rooted in Quality,<br>Grown with Purpose</h2>
+        <p>We're a small farming operation based in South Africa, dedicated to growing the freshest vegetables for our community. Our rich, red soil and careful farming methods produce spinach, butternut, and seasonal crops that local families and businesses trust.</p>
+        <p>From planting to harvest, every step is done with care — because we believe good food starts with good farming.</p>
+        <a href="#" class="learn-link" onclick="showPage('about')">Learn Our Story ›</a>
+      </div>
+      <div class="intro-images reveal">
+        <div class="intro-img">
+          <img src="/assets/farm-fields.jpeg" alt="Farm fields"/>
+        </div>
+        <div class="intro-img">
+          <img src="/assets/farm-harvest.jpeg" alt="Farm harvest"/>
+        </div>
+  </section>
+
+   <!-- Values -->
+  <section class="values-section">
+    <div class="values-inner">
+      <div class="values-grid">
+        <div class="value-card reveal">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 00-7 17l7-10v10a10 10 0 100-17z"/></svg>
+          </div>
+          <h3>Naturally Grown</h3>
+          <p>Fresh produce cultivated using sustainable, earth-friendly methods.</p>
+        </div>
+        <div class="value-card reveal">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h5l2 3v5h-7V8zM5.5 21a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM18.5 21a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></svg>
+          </div>
+          <h3>Local Supply</h3>
+          <p>Serving our community with reliable, direct farm-to-table delivery.</p>
+        </div>
+        <div class="value-card reveal">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h3>Community First</h3>
+          <p>Supporting local businesses, restaurants, and families with quality food.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produce Preview -->
+  <section class="produce-section">
+    <div class="produce-inner">
+      <div class="produce-header reveal">
+        <h2 class="section-title">Our Fresh Produce</h2>
+        <p class="section-subtitle">Grown on our farm with care — available for local customers, restaurants, and retailers.</p>
+      </div>
+      <div class="produce-grid">
+        <div class="produce-card reveal">
+          <div class="produce-img">
+            <img src="/assets/spinach-product.jpg" alt="Spinach"/>
+            <span class="produce-badge badge-season">In Season</span>
+          </div>
+          <div class="produce-info">
+            <h3>Spinach</h3>
+            <p>Fresh, nutrient-rich spinach grown with care. Available year-round.</p>
+          </div>
+        </div>
+        <div class="produce-card reveal">
+          <div class="produce-img">
+            <img src="/assets/butternut-product.jpg" alt="Butternut"/>
+            <span class="produce-badge badge-season">In Season</span>
+          </div>
+          <div class="produce-info">
+            <h3>Butternut</h3>
+            <p>Sweet, creamy butternut squash. A staple favourite for every kitchen.</p>
+          </div>
+        </div>
+        <div class="produce-card reveal">
+          <div class="produce-img">
+            <img src="/assets/tomatoes-product.jpg" alt="Tomatoes"/>
+            <span class="produce-badge badge-seasonal">Seasonal</span>
+          </div>
+          <div class="produce-info">
+            <h3>Tomatoes</h3>
+            <p>Juicy vine-ripened tomatoes bursting with flavour. Seasonal crop.</p>
+          </div>
+        </div>
+        <div class="produce-card reveal">
+          <div class="produce-img">
+            <img src="/assets/" alt="Onions"/>
+            <span class="produce-badge badge-seasonal">Seasonal</span>
+          </div>
+          <div class="produce-info">
+            <h3>Onions</h3>
+            <p>Crisp, golden onions perfect for any dish. Seasonal availability.</p>
+          </div>
+        </div>
+      </div>
+      <div class="produce-cta reveal">
+        <a href="#" class="btn-primary" onclick="alert('Coming soon!')">View All Produce →</a>
+      </div>
+    </div>
+  </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
