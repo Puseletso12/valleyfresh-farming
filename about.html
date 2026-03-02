@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valley Fresh Farming – Fresh From Our Fields to Your Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+      <a href="#" class="nav-logo" onclick="showPage('home')">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-leaf h-7 w-7 text-primary"
+        >
+          <path
+            d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"
+          ></path>
+          <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+        </svg>
+        Valley Fresh Farming
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li>
+          <a href="#" onclick="showPage('home')" id="nav-home" class="active"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="about.html" onclick="showPage('about')" id="nav-about">About Us</a>
+        </li>
+        <li>
+          <a href="#" onclick="alert('Coming soon!')" id="nav-produce"
+            >Our Produce</a
+          >
+        </li>
+        <li>
+          <a href="#" onclick="alert('Coming soon!')" id="nav-contact"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a href="#" class="nav-cta" onclick="showPage('about')"
+            >Get In Touch</a
+          >
+        </li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="page" id="page-about">
+       <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1>About Our Farm</h1>
+    </div> 
+    </div>
+
+     <!-- Our Story -->
+  <section class="story-section">
+    <div class="story-inner">
+      <div class="story-text reveal">
+        <p class="section-label">Who We Are</p>
+        <h2 class="section-title">Our Story</h2>
+        <p>Valley Fresh Farming started with a simple vision: to grow honest, fresh food for our community. Based in the heart of South Africa, we work the rich red soil that our region is known for, cultivating vegetables that nourish families and support local businesses.</p>
+        <p>What began as a small plot has grown into a thriving farm, supplying spinach, butternut, tomatoes, and onions to customers who value freshness and quality above all.</p>
+        <p>We believe in farming that respects the land, supports the community, and delivers produce you can trust. Every head of spinach, every butternut — grown with purpose.</p>
+      </div>
+      <div class="story-img reveal">
+        <img src="/assets/farm-harvest.jpeg" alt="Farmer with produce"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Farm -->
+  <section class="farm-methods">
+    <div class="farm-inner">
+      <div class="reveal">
+        <p class="section-label">Our Methods</p>
+        <h2 class="section-title">How We Farm</h2>
+      </div>
+      <div class="farm-grid">
+        <div class="farm-card reveal">
+          <div class="farm-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </div>
+          <h3>Natural Sunlight</h3>
+          <p>Our crops thrive under the South African sun, growing at nature's pace.</p>
+        </div>
+        <div class="farm-card reveal">
+          <div class="farm-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C6 2 3 7 3 12c0 3 1.5 5.5 4 7"/><path d="M12 22c3-.5 5-3 5-6 0-2-1-3.5-2.5-4.5"/><path d="M9 12c0-2 1-3.5 3-4"/></svg>
+          </div>
+          <h3>Drip Irrigation</h3>
+          <p>Water-efficient irrigation systems ensure sustainable use of resources.</p>
+        </div>
+        <div class="farm-card reveal">
+          <div class="farm-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 00-7 17l7-10v10a10 10 0 100-17z"/></svg>
+          </div>
+          <h3>Quality Seed</h3>
+          <p>We select the best seed varieties for flavour, nutrition, and yield.</p>
+        </div>
+        <div class="farm-card reveal">
+          <div class="farm-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Community Labour</h3>
+          <p>Providing jobs and opportunities for our local community members.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- ============ FOOTER ============ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo" onclick="showPage('home')">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-leaf h-7 w-7 text-primary"
+        >
+          <path
+            d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"
+          ></path>
+          <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+        </svg>
+        Valley Fresh Farming
+      </a>
+      <p>Growing fresh, quality vegetables for our local community. From our valley to your table — naturally.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#" onclick="showPage('home')">Home</a></li>
+        <li><a href="#" onclick="showPage('about')">About Us</a></li>
+        <li><a href="#" onclick="alert('Coming soon!')">Our Produce</a></li>
+        <li><a href="#" onclick="alert('Coming soon!')">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <div class="footer-contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.62 19.79 19.79 0 01.07 1a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 6.91a16 16 0 006.06 6.06l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        +27 (81) 565-6302
+      </div>
+      <div class="footer-contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        info@valleyfreshfarming.co.za
+      </div>
+      <div class="footer-contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Limpopo Province, South Africa
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Valley Fresh Farming. All rights reserved.</div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
