@@ -11,6 +11,24 @@ hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("open");
 });
 
+// ============ PAGE SWITCHING ============
+function showPage(page) {
+  document
+    .querySelectorAll(".page")
+    .forEach((p) => p.classList.remove("active"));
+  document.getElementById("page-" + page).classList.add("active");
+
+  document
+    .querySelectorAll(".nav-links a")
+    .forEach((a) => a.classList.remove("active"));
+  const navEl = document.getElementById("nav-" + page);
+  if (navEl) navEl.classList.add("active");
+
+  navLinks.classList.remove("open");
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  setTimeout(triggerReveal, 100);
+}
+
 // ============ HERO BG ZOOM EFFECT ============
 const heroBg = document.getElementById("heroBg");
 if (heroBg) {
